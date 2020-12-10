@@ -1,0 +1,113 @@
+html,body { margin: 0; padding: 0; }
+a {
+  text-decoration: none;
+  color: #fff;
+}
+a:hover {
+  text-decoration: underline;
+}
+ul {
+  list-style: none;
+  margin: 0;
+  font-weight: bold;
+}
+.topb {
+  width: 100%;
+  height: 50px;
+  background-color: #111;
+}
+.login {
+  color: #fff;
+  font-size: 0.8rem bold;
+  margin: 0 auto;
+  width: 600px;
+  text-align: right;
+}
+.login > ul {
+  padding-top: 13px;
+  margin-right: 7px;
+}
+.login > ul > li {
+  display: inline-block;
+}
+.header {
+  width: 600px;
+  height: 150px;
+  background-image: url(moon.jpg);
+  background-size: cover;
+  margin: 0 auto;
+}
+.nav {
+  width: 600px;
+  height: 50px;
+  margin: 0 auto;
+  /* text-align: center; */
+  background-color: #111;
+}
+.nav > ul {
+  padding-top: 13px;
+}
+.nav > ul > li {
+  display: inline-block;
+  text-align: center;
+  margin-left: 30px;
+}
+.main {
+  width: 600px;
+  margin: 0 auto;
+  background-color:lightskyblue;
+  overflow: hidden;
+}
+.aside {
+  width: 20%;
+  background-color: lightskyblue;
+  float: left;
+}
+.section {
+  width: 80%;
+  background-color: lightcyan;
+  padding-bottom: 20px;
+  float: left;
+}
+.secs {
+  width: 330px;
+  margin: 0 auto;
+  padding-bottom: 20px;
+}
+/* .secs> ul {
+  padding-bottom: 30px;
+} */
+.ful{
+  padding-bottom: 20px;
+  padding-top: 20px;
+  background-color: #fff;
+}
+
+h3 {
+  text-align: center;
+  letter-spacing: 0.5em;
+  margin: 10px;
+}
+
+.sub {
+  background: green;
+  color: white;
+  width: 246px;
+  height: 30px;
+  text-align: center;
+  margin-top: 20px;
+  font-weight: bold;
+}
+
+.footer {
+  width: 600px;
+  height: 80px;
+  background-color: darkgray;
+  color: #fff;
+  clear: both;
+  margin: 0 auto;
+  text-align: center;
+  font-weight: bold;
+}
+#ft{
+  margin-top: 28px;}

@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>회원가입</title>
+  <style>
+  
+    html, body {margin: 0; padding: 0; height: 100%}
+    .header {height: 15%; background-color: lightpink;}
+    .nav {width: 20%; height: 70%; background-color: lightskyblue; float:left;}
+    .section {width:60%; height: 70%; background-color:white; float:left;}
+    .aside {width: 20%; height: 70%; background-color: lightgoldenrodyellow; float:left;}
+    .footer {height: 15%; background-color: grey; clear:both;}
+    ul {list-style: none; background-color: white;}
+    h3 {text-align: center;}
+    .cell_padding {padding: 1em;}
+    .button {background: green; color: white; width: 210px; text-align: center;}
+  </style>
+</head>
+
+<body>
+  <!--header class="header">header</header>
+  <nav class="nav">nav</nav>
+  <section class="section">section</section>
+  <aside class="aside">aside</aside>
+  <footer class="footer">footer</footer-->
+
+<h3>회 원 가 입</h3>
+<table style="border: 2px solid red" inner align="center">
+<tr>
+<td class="cell_padding">
+<ul>
+  <li>아이디</li> 
+  <label><li><input type="text" style="width: 210px;"></li></label>
+  <li>비밀번호</li>
+  <label><li><input type="password" style="width: 210px;"></li></label>
+  <li>비밀번호확인</li> 
+  <label><li><input type="password" style="width: 210px;"></li></label>
+  <li>전화번호</li> 
+  <label><li><input type="tel" style="width: 210px;"></li></label>
+  <li>별칭</li>
+  <label></label><li><input type="text" style="width: 210px;"></li></label>
+  <li>지역</li>
+  <label><li><select name="city"></li></label>
+    <option>
+      == 선 택 ==
+    </option>
+    <option>
+      서울
+    </option>
+    <option>
+      부산
+    </option>
+    <option>
+      울산
+    </option>
+  </select>
+  <li>성별</li>
+  <label><li><input type="radio" value="1" name="se">남자
+  <input type="radio" value="2" name="se">여자</li></label>
+  <li>취미</li>
+  <label>
+  <form>
+    <input type="checkbox" value="1">독서
+    <input type="checkbox" value="2">음악감상
+    <input type="checkbox" value="3">운동
+    <input type="checkbox" value="4">게임
+  </form>
+  </label>
+  <li><strong>생년월일</strong></li>
+  <label><li><input type="date" value="2020-10-21"></li></label><br>
+  <label><li><input type="submit" class="button" value="회원가입"></li></label>
+</ul>
+</td>
+</tr>
+</table>
+
+</body>
+
+</html>

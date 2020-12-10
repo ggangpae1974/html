@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>1</title>
+  <script>
+    //caee1 익명함수
+    window.addEventListener('load', function(){
+      const elem = document.getElementById('myBody');
+      if (elem == null) {
+        alert ('body is not made yet');
+      }
+    });
+
+    //case2 이름있는 함수
+
+
+    //case3)람다식 함수
+    window.addEventListener('load', () => {
+      const elem = document.getElementById('myBody');
+      if (elem == null) {
+        alert ('body is not made yet');
+      }
+    });
+
+  </script>
+</head>
+<body id="myBody">
+  <p id="first">hello</p>    
+</body>
+</html>

@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>내용복습</title>
+  <style>
+    li{
+      font-size: 20px;margin-bottom: 20px;
+    }
+  </style>
+</head>
+<body>
+  <ol>
+    <li>
+      블럭요소(dev) & 인라인요소(span) & 블럭+인라인(img) <br>
+      => dispaly:block or inline or inline_block;
+      
+      <ol>블럭요소의 특징
+        <li>부모요소의 가로폭에 맞춰 한 라인 전체를 랜드하는 개념</li>
+        <li>가로, 세로 크기(width, height)를 가질수 있다.</li>
+        <li>height를 지정하지 않았을때는 컨텐츠의 높이만큼만 갖는다.</li>
+        <li>상하단 마진은 병합현상이 나타난다. <span text-color="red">(큰쪽의 마진값이 반영됨)</span></li>
+        <li>중앙정렬 margin:o(상하-y축) auto(좌우)</li>
+      </ol>      
+      <ol>인라인요소의 특징
+        <li>컨텐츠의크기 만큼의 영역을 갖는다.</li>
+        <li>가로, 세로의 크기를 가질 수 없다.</li>
+        <li>만진 병합현상이 일어나지 않는다.</li>
+        <li>중앙정렬 text-again:center</li>
+      </ol> 
+      <ol>블럭+인라인요소의 특징
+        <li>크기를 가질 수 있고 가로 공간이 남을 시 옆에 배치된다.</li>
+      </ol>     
+    </li>
+    <li>
+      박스모델: content,padding,border,margin
+    </li>
+    <li>
+      float, clear <br>
+      float:이미지, 텍스트를 어울리게 하는 용도
+    </li>
+    <li>
+      position:요소를 원하는 위치에 지정=>화면안:+, 화면밖:- <br>
+      static, relative,absolute, fixed,sticky <br>
+      -같이 사용되는 속성:top,right,bottom,left <br>
+      -static:기본값 <br>
+      -relative: 본래 위치를 기준으로 이동배치 <br>
+      -absolute:부모요소를 기준으로 이동배치(단, 부모요소중 position이 아닌) <br>
+      -fixed:페이지 스크롤해도 정해둔 그 자리 <br>
+      -sticky:스크롤시 특정위치에 고정배치
+    </li>
+    <li>
+      selector(선택자) :페이지내에 사용 사용방법 숙지 <br>
+      * : 모든요소 <br>
+      . : 복수선택<br>
+      , : 클래스선택 <br>
+      # : id선택 <br>
+      > : 직계자식 선택<br>
+      공백 :자손 <br>
+      + : 형제요소 선택(가장 가까운 요소 선택)<br>
+      ~ : 일반형제 선택(이후 형제요소중에서 선택) <br>
+      [] : 요소의 선택요소 <br>
+      : => 가상 클래스 <br>
+      <a href="https://flukeout.github.io/">selector 선택게임</a> 
+    </li>
+    <li style="color:red;">
+      CSS스타일시트 만들어서 링크걸기 <link href="파일네임.css">
+      <li>
+        부모태그(부모요소):자신을 둘러싸는 태그<br>
+        =>상속이 될 수도 있고 안될 수 도 있다.
+      </li>
+      <li>
+        style의 body에서 color를 선택하면 글자색이다.
+      </li>
+    <li>
+      단위 : px, %, em, rem,vh(vw) <br>
+      em은 기준으로 해서 배수
+    </li>
+    <li>
+      상속 : 상위요소의 css속성이 하위 요소에 적용되는 현상
+    </li>
+    <li>
+      css적용 우선순위 : css적용에 가장 가까운(구체적인) 스타일속성이 적용됨. <br>
+      =>id > class >태그
+    </li>
+    <li>
+      폰트제어
+      font:italic bold 20px,
+    </li>
+    <li>
+      배경색이나 이미지지정 <br>
+      =>background-clolr:skyblue;
+    </li>
+    <li>
+      픽사베이=>무료 사진
+    </li>
+  </ol>
+  <h3>10월 30일</h3>
+  <ol>emmit(단축키)
+    <li>emmit->cheat sheet</li>
+    <li></li>
+    <li></li>
+  </ol>
+</body>
+</html>

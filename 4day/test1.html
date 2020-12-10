@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>overflow:hidden</title>
+  <style>
+    div{border:1px solid red}
+    div.box{background-color:green;overflow: hidden;}
+    /* overflow: hidden;은 item들이 z축으로 떠 있기 때문에 box를 인식하지 못하기 때문에 쓰임 */
+    div.item1,div.item2,div.item3{float: left;}
+    div.item2{background-color: aqua;}
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="item1">item1</div>
+    <div class="item2">item2</div>
+    <div class="item3">item3</div>
+  </div>
+</body>
+</html>

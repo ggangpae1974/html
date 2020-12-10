@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <titl>box의 정렬</title>
+  <style>
+    .box{display: flex;
+    /* justify-content: space-between;왼쪽부터
+     justify-content: space-around;중앙부터
+    justify-content: space-evenly;균등하게 */
+    }
+    .item{width: 50px;height: 50px;display:inline-block}
+    /* display: inline;box를 인라인으로
+    display에서 선택가능 */
+    .item.item1{background-color: yellow;}
+    .item.item2{background-color:green;}
+    .item.item3{background-color: blue;}
+    /* .box{font-size: 0px;} 글자가 없을 때 사용 옆의 공백없애기 */
+  </style>
+</head>
+<body>
+  <div class="box">
+    <div class="item item1">item1</div>
+    <div class="item item2">item2</div>
+    <div class="item item3">item3</div>
+  </div>
+</body>
+</html>

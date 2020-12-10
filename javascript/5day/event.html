@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    form {
+      background-color: yellow;
+    }
+    input {
+      background-color: blue;
+    }
+  </style>
+
+</head>
+<body>
+  
+  <form action="">
+    <input type="checkbox">목요일
+  </form>
+  <script>
+    //이벤트소스(intut)
+    const $input = document.querySelector("input[type=checkbox]");
+  //괄호안에서 css문법사용가능 ->지금은 input이 하나밖에 존재하지 않아서 input로 설정
+  //$input자체가 DOM객체
+  //"input"(한개) or "input[type=checkbox]"
+
+  //이벤트 소스(form)
+  const $form = document.querySelector('form')
+
+  //이벤트감지센스부착(addEventListener ('이벤트명', 핸들러(함수),'이벤트흐름'))
+  //이게 기본 :$input.addEventListener('click',function(){},false);
+  //이벤트흐름의 false(생략가능, default가 false)는 bobble단계에서 이벤트 실행 -> 잠시 보류
+  //input은 true, false가 순서에 상관이 있지만, form은 상관이 없다.
+  $input.addEventListener('click',function(evt){
+    // console.log(evt);
+    console.log('input : 캡처링');
+  },true);
+  
+  $input.addEventListener('click',function(evt){
+    // console.log(evt);
+    console.log('input : 버블링');
+  },false);
+  
+  $form.addEventListener('click',function(evt){
+    // console.log(evt);
+    console.log('form : 버블링');
+  },false);
+  
+  $form.addEventListener('click',function(evt){
+    // console.log(evt);
+    console.log('form : 캡처링');
+  },true);
+  </script>
+</body>
+</html>

@@ -1,0 +1,77 @@
+*{margin: 0;padding: 0;}
+
+/* common */
+.container{
+  width: 600px; margin: 0 auto;
+  text-align: center;
+  /* background-color: magenta; */
+}
+/* upper most */
+.uppermost{
+  background-color:#e1ffb1;
+}
+.container-um{
+  background-color: #add681;
+}
+/* header */
+header{
+  background-color: #80e8dd;
+}
+.container-h{
+  background-color:#4db6ac;
+  background-image: url(moon.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 150px;
+}
+/* nav */
+nav{
+  background-color: #99e6ff;
+}
+.container-n{
+  background-color: #64b5f6;
+}
+/* main */
+main{
+  background-color: #c6a3ff;
+}
+.container-m{
+  background-color: #9575cd ;
+  outline: 3px solid red;
+  overflow: hidden;
+}
+.container-m section{
+  float: left;
+}
+.container-m section.s1{
+  width: 50%;
+}
+.container-m section.s2{
+  width: 30%;
+}
+.container-m section.s3{
+  width: 20%;
+}
+/* footer menu */
+.footermenu{
+  background-color: #ff94c2;
+}
+.container-fm{
+  background-color: #f06292;
+}
+/* footer */
+footer{
+  background-color: #ffffa8;
+}
+.container-f{
+  background-color:#fff176 ;
+}
+/* 배경색제거 */
+header,nav,main{
+  background-color: transparent;
+}
+/* .claerfix */
+.clearfix{
+  clear: both;
+  /* float의 왼쪽, 오른쪽흐르을 차단 */
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>P306-6-1</title>
+</head>
+<body>
+  <script>
+    //case1)이름 있는 함수
+    function big (x,y){
+      let max;
+      if(parseInt(x) >= parseInt(y)){
+        max =x;
+      }else {
+        max=y;
+      }
+      return max;
+    };
+
+    let big2 = function(x,y){
+      let max;
+      if(parseInt(x) >= parseInt(y)){
+        max =x;
+      }else {
+        max=y;
+      }
+      return max;
+    };
+  </script>
+  <script>
+  let b = big("625", "555");
+  document.write('큰수 = '+b);
+  </script>
+  
+</body>
+</html>
